@@ -1,0 +1,170 @@
+{
+  "CRS-14": {
+    "io_type": "DOUT",
+    "desc": "8xDout Relay"
+  },
+  "CIO-11": {
+    "io_type": "DIO",
+    "desc": "16xDin/Dout Configurable Sink"
+  },
+  "CRS-13": {
+    "io_type": "DOUT",
+    "desc": "4xDout FG Relay"
+  },
+  "CIO-10": {
+    "io_type": "DIO",
+    "desc": "8xDout 8xDIN"
+  },
+  "CDO-11": {
+    "io_type": "DOUT",
+    "desc": "16xDout Sink"
+  },
+  "CRS-10": {
+    "io_type": "DOUT",
+    "desc": "8xDout Relay"
+  },
+  "CDI-12": {
+    "io_type": "DIN",
+    "desc": "16xInverted Din"
+  },
+  "COO-11": {
+    "io_type": "DOUT",
+    "desc": "16xDout Opto"
+  },
+  "COO-10": {
+    "io_type": "DOUT",
+    "desc": "8xDout Opto"
+  },
+  "CDI-11": {
+    "io_type": "DIN",
+    "desc": "16xDin 5V"
+  },
+  "CDI-10": {
+    "io_type": "DIN",
+    "desc": "16xDin 24V"
+  },
+  "CDO-10": {
+    "io_type": "DOUT",
+    "desc": "16xDout Source"
+  },
+  "CIO-12": {
+    "io_type": "DIO",
+    "desc": "16xDin/Dout Configurable Source"
+  },
+  "VDO-10": {
+    "io_type": "DOUT",
+    "desc": "16xDout Virtual Source"
+  },
+  "CAO-16": {
+    "io_type": "AOUT",
+    "desc": "16xAout 16 bit 0 to 10"
+  },
+  "CAO-15": {
+    "io_type": "AOUT",
+    "desc": "8xAout 16 bit -10 to 10"
+  },
+  "CTP-11": {
+    "io_type": "TC",
+    "desc": "8xThermocouple k-type"
+  },
+  "CTP-13": {
+    "io_type": "TC",
+    "desc": "8xThermocouple j-type"
+  },
+  "CTP-14": {
+    "io_type": "TC",
+    "desc": "8xThermocouple r-type"
+  },
+  "CAO-17": {
+    "io_type": "AOUT",
+    "desc": "16xAout 16 bit -10 to 10"
+  },
+  "CTP-12": {
+    "io_type": "GENERIC_SLOT_TYPE_AINOUT",
+    "desc": "4xRTD -10 to 10"
+  },
+  "CAI-11": {
+    "io_type": "AIN",
+    "desc": "8xAin 16 bit Open reads 0"
+  },
+  "CAI-15": {
+    "io_type": "AIN",
+    "desc": "16xAin 16 bit Open reads 0"
+  },
+  "CAO-18": {
+    "io_type": "AOUT",
+    "desc": "8xAout 16 bit -10.05 to 10.05"
+  },
+  "CAO-19": {
+    "io_type": "AOUT",
+    "desc": "16xAout 16 bit -10.05 to 10.05"
+  },
+  "CAI-16": {
+    "io_type": "AIN",
+    "desc": "4-20mA Input 250 Ohm"
+  },
+  "CAI-17": {
+    "io_type": "AIN",
+    "desc": "4-20mA Input 500 Ohm"
+  },
+  "CTP-15": {
+    "io_type": "TC",
+    "desc": "8xThermocouple config-type"
+  },
+  "CPM-10": {
+    "io_type": "AIO",
+    "desc": "16xAIN/AOUT -10V to 10V"
+  },
+  "CTP-16": {
+    "io_type": "RTD",
+    "desc": "4xRTD config type"
+  },
+  "CUR-12": {
+    "io_type": "UART",
+    "desc": "4xUART RS-232/RS-485"
+  },
+  "CUR-13": {
+    "io_type": "UART",
+    "desc": "4xUART RS-232/RS-422"
+  },
+  "SAI-10": {
+    "io_type": "SAI",
+    "desc": "8xSafe Analog In Small Signal"
+  },
+  "SAI-11": {
+    "io_type": "SAI",
+    "desc": "4xSafe Analog In Small Signal"
+  },
+  "VDI-10": {
+    "io_type": "DIN",
+    "desc": "64xVirtual Din Status"
+  },
+  "VIX-1": {
+    "io_type": "VIX",
+    "desc": "1xVIX PROBE V -10 to 10"
+  },
+  "CLB-10": {
+    "io_type": "NONE",
+    "desc": "Loopback - Can we delete this entry?"
+  },
+  "CLB-11": {
+    "io_type": "NONE",
+    "desc": "Loopback-M - Can we delete this entry?"
+  },
+  "------": {
+    "io_type": "NONE",
+    "desc": "No Card"
+  },
+  "Config": {
+    "io_type": "NONE",
+    "desc": "Config"
+  },
+  "VSC-10": {
+    "io_type": "NONE",
+    "desc": "RIM Status and Control"
+  },
+  "VTP-10": {
+    "io_type": "NONE",
+    "desc": "Virtual Temp Controller"
+  }
+}

@@ -1,68 +1,69 @@
+from virtualnodes import *
+from virtualtests import *
 from dataclasses import dataclass
-from typing import List, Optional
+from typing import List
 
 
 @dataclass
-class vNode:
-    name: str
-    source: Optional["vNode"] = None
-    next: Optional["vNode"] = None
-
-
-class NodeCard(vNode):
-    io_type: str
-    mb_position: str
-    card: Optional["vCard"] = None
-
-
-class NodeFC(vNode):
+class FieldConnect:
     connector: str
-    pins: List[str]
-    card: Optional["vCard"] = None
+    pin: str
 
 
 @dataclass
-class vChannel:
+class Channel:
     name: str
-    node: List[vNode]
-
-
-@dataclass
-class vCard:
-    part_number: str
+    rim: str
+    slot: str
+    card_pin: str
     io_type: str
-    max_channels: str
-    channels: List[vChannel]
+    connect: FieldConnect
 
-@dataclass
-class vController:
-    part_number: str
-    serial_number: str
-    description: str
-    product_type: str
-    main_customer: str
-
-
-@dataclass
-class vRim(vController):
-    rim_fabric: str
-    slot_cards: List[vCard]
+    @property
+    def channel_number(self) -> int:
+        if self.total_channels == 16:
+            return self.pin_number
+        elif self.total_channels == 8:
+            return (self.pin_number + 1) // 2
+        else:
+            raise ValueError("Unsupported channel count (only 8 or 16 allowed)")
 
 
-@dataclass
-class vFusion(vController):
-    rim_fabric: str
-    cm_fabric: str
-    firmware: str
-    slot_cards: List[str]
-    rims: List[vRim]
 
-@dataclass
-class vSystem:
-    customer: str
-    tool_name: str
-    rim_1: vController
-    rim_2: vController
-    rim_3: vController
-    rim_4: vController
-    rim_5: vController
+class Card:
+    def __init__(self):
+        self.part_number = ''
+        self.io_type = ''
+        self.max_channels = ''
+        self.channels = []
+
+
+class Controller:
+    def __init__(self):
+        self.part_number = ''
+        self.description = ''
+        self.product_type = ''
+
+class Rim(Controller):
+    def __init__(self):
+        super().__init__()
+        self.rimport = ''
+        self.slot_cards= []
+
+class Rcm(Controller):
+    def __init__(self):
+        super().__init__()
+        self.cm_fabric: ''
+        self.firmware: ''
+        self.rims: []
+
+class Fusion(Rcm):
+    def __init__(self):
+        super().__init__()
+        self.slot_cards: []
+
+class System:
+    def __init__(self):
+        self.customer = ''
+        self.system_name = ''
+        self.controllers = {}
