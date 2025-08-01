@@ -1,0 +1,81 @@
+{
+  "21-200106-00": {
+    "information": {
+      "io": "IN",
+      "io type": "Digital Sourcing",
+      "io name": "16xDin 24V"
+    },
+    "equipment": [
+      {
+        "idx": 0,
+        "name": "Power Supply",
+        "description": "Tenma PS 001",
+        "settings": {
+          "voltage": "24V"
+        }
+      }
+    ],
+    "tests": [
+      {
+        "idx": 0,
+        "description": "Connect",
+        "action": {
+          "type": "",
+          "value": "",
+          "unit": "",
+          "command": ""
+        }
+      },
+      {
+        "idx": 1,
+        "description": "Assert 0V",
+        "action": {
+          "type": "ASSERT",
+          "value": 0,
+          "unit": "V",
+          "command": ""
+        }
+      },
+      {
+        "idx": 2,
+        "description": "Set PS to 24V",
+        "action": {
+          "type": "SET",
+          "value": 24,
+          "unit": "V",
+          "command": ""
+        }
+      },
+      {
+        "idx": 3,
+        "description": "Assert 24V",
+        "action": {
+          "type": "ASSERT",
+          "value": 24,
+          "unit": "V",
+          "command": ""
+        }
+      },
+      {
+        "idx": 4,
+        "description": "Set PS to 0V",
+        "action": {
+          "type": "SET",
+          "value": 0,
+          "unit": "V",
+          "command": ""
+        }
+      },
+      {
+        "idx": 5,
+        "description": "Assert 0V",
+        "action": {
+          "type": "ASSERT",
+          "value": 0,
+          "unit": "V",
+          "command": ""
+        }
+      }
+    ]
+  }
+}

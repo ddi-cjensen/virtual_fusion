@@ -31,12 +31,11 @@ class Channel:
 
 
 class Card:
-    def __init__(self):
-        self.part_number = ''
-        self.io_type = ''
-        self.max_channels = ''
+    def __init__(self, part_number='', io_type='', max_channels=''):
+        self.part_number = part_number
+        self.io_type = io_type
+        self.max_channels = max_channels
         self.channels = []
-
 
 class Controller:
     def __init__(self):

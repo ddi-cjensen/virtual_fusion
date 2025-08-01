@@ -3,8 +3,6 @@ class RIM:
         self.part_number = partnumber
         self.slot_cards = {}
 
-
-
 class Card:
     def __init__(self, iotype: str):
         self.io_type = iotype
